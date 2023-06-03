@@ -1,0 +1,2574 @@
+/* line 16, /Users/craigchilds/Projects/freestate/frontends/patient/src/sass/Blocks/_blocks.overlay.scss */
+.overlay {
+  background: rgba(0, 0, 0, 0.7);
+  display: block;
+  height: 100%;
+  left: 0;
+  opacity: 0;
+  position: fixed;
+  top: -100%;
+  transition: opacity 300ms ease;
+  transition-delay: opacity 200ms;
+  width: 100%;
+  z-index: 10000;
+      text-align: center;
+}
+
+.overlay-invite {
+  background: rgba(0, 0, 0, 0.7);
+  display: block;
+  height: 100%;
+  left: 0;
+  opacity: 0;
+  position: fixed;
+  top: -100%;
+  transition: opacity 300ms ease;
+  transition-delay: opacity 200ms;
+  width: 100%;
+  z-index: 10000;
+  
+}
+
+/* line 29, /Users/craigchilds/Projects/freestate/frontends/patient/src/sass/Blocks/_blocks.overlay.scss */
+.overlay--active {
+  opacity: 1;
+  top: 0;
+}
+
+/* line 35, /Users/craigchilds/Projects/freestate/frontends/patient/src/sass/Blocks/_blocks.overlay.scss */
+.overlay--add-reading .overlay__form label.form__error {
+  display: inherit;
+  padding-top: 12px;
+  max-width: 100px;
+  line-height: 1.4;
+}
+
+/* line 43, /Users/craigchilds/Projects/freestate/frontends/patient/src/sass/Blocks/_blocks.overlay.scss */
+.overlay__alert {
+    background: #fff;
+    left: 50%;
+    padding: 40px 60px;
+    position: absolute;
+    top: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    width: 540px;
+    border-radius: 10px;
+}
+ 
+/* line 52, /Users/craigchilds/Projects/freestate/frontends/patient/src/sass/Blocks/_blocks.overlay.scss */
+.overlay__alert__title {
+  margin: 0 0 30px;
+ text-align: center;
+ font-size: 20px;
+}
+
+/* line 61, /Users/craigchilds/Projects/freestate/frontends/patient/src/sass/Blocks/_blocks.overlay.scss */
+.overlay__alert__buttons {
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 100%;
+  margin-top: 8%;
+}
+
+/* line 66, /Users/craigchilds/Projects/freestate/frontends/patient/src/sass/Blocks/_blocks.overlay.scss */
+.overlay__alert__buttons .btn {
+  width: calc(50% - 5px);
+}
+
+/* line 69, /Users/craigchilds/Projects/freestate/frontends/patient/src/sass/Blocks/_blocks.overlay.scss */
+.overlay__alert__buttons .btn--cancel {
+  background: #fa023c;
+  color: #fff;
+}
+
+/* line 74, /Users/craigchilds/Projects/freestate/frontends/patient/src/sass/Blocks/_blocks.overlay.scss */
+.overlay__alert__buttons .btn--center {
+  margin: 0 auto;
+}
+
+/* line 81, /home/prashant/freestate_staging/freestate/frontends/hcp/src/sass/Blocks/_blocks.overlay.scss */
+.overlay__available-hours {
+  background: #fff;
+  left: 50%;
+  height: calc(100vh - 200px);
+  overflow: scroll;
+  padding: 40px;
+  position: absolute;
+  top: 100px;
+  -ms-transform: translateX(-50%);
+      transform: translateX(-50%);
+  width: 540px;
+}
+
+/* line 92, /home/prashant/freestate_staging/freestate/frontends/hcp/src/sass/Blocks/_blocks.overlay.scss */
+.overlay__available-hours__header {
+  position: relative;
+  width: 100%;
+}
+
+/* line 97, /home/prashant/freestate_staging/freestate/frontends/hcp/src/sass/Blocks/_blocks.overlay.scss */
+.overlay__available-hours h1 {
+  color: #13b5ea;
+  font: 30px/30px "Montserrat", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
+  margin-bottom: 10px;
+}
+
+/* line 104, /home/prashant/freestate_staging/freestate/frontends/hcp/src/sass/Blocks/_blocks.overlay.scss */
+.overlay__available-hours h3 {
+  color: #a7a7a7;
+  font: 18px/18px "Montserrat", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
+  margin-bottom: 50px;
+}
+
+/* line 110, /home/prashant/freestate_staging/freestate/frontends/hcp/src/sass/Blocks/_blocks.overlay.scss */
+.overlay__available-hours__close {
+  color: #13b5ea;
+  font: 14px/18px Arial;
+  font-weight: 700;
+  position: absolute;
+  right: -20px;
+  text-decoration: none;
+  text-transform: uppercase;
+  top: -20px;
+}
+
+/* line 120, /home/prashant/freestate_staging/freestate/frontends/hcp/src/sass/Blocks/_blocks.overlay.scss */
+.overlay__available-hours__close:hover {
+  color: #a7a7a7;
+}
+
+/* line 125, /home/prashant/freestate_staging/freestate/frontends/hcp/src/sass/Blocks/_blocks.overlay.scss */
+.overlay__available-hours__times {
+  border: 0 none;
+  height: calc(100% - 140px);
+  overflow: scroll;
+  padding-right: 20px;
+  width: calc(100% + 20px);
+}
+
+/* line 135, /home/prashant/freestate_staging/freestate/frontends/hcp/src/sass/Blocks/_blocks.overlay.scss */
+.overlay__available-hours .available-hours__row {
+  border-bottom: 1px solid #d7d7d7;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: justify;
+      justify-content: space-between;
+  padding: 10px 0;
+}
+
+/* line 141, /home/prashant/freestate_staging/freestate/frontends/hcp/src/sass/Blocks/_blocks.overlay.scss */
+.overlay__available-hours .available-hours__row:last-child {
+  border: 0 none;
+}
+
+/* line 146, /home/prashant/freestate_staging/freestate/frontends/hcp/src/sass/Blocks/_blocks.overlay.scss */
+.overlay__available-hours .available-hours__item {
+  position: relative;
+}
+
+/* line 149, /home/prashant/freestate_staging/freestate/frontends/hcp/src/sass/Blocks/_blocks.overlay.scss */
+.overlay__available-hours .available-hours__item__label {
+  color: #a7a7a7;
+  cursor: pointer;
+  font: 16px/16px "Montserrat", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
+}
+
+/* line 156, /home/prashant/freestate_staging/freestate/frontends/hcp/src/sass/Blocks/_blocks.overlay.scss */
+.overlay__available-hours .available-hours__item--all label {
+  color: #13b5ea;
+}
+
+/* line 611, /Users/craigchilds/Projects/freestate/frontends/patient/src/sass/Components/_components.form.scss */
+.skinned-select, .av-settings .opentok-hardware-setup-selector select {
+  border: 1px solid #C0BFBE;
+  color: #515151;
+  cursor: pointer;
+  display: block;
+  font: normal 14px/16px 'Open Sans', sans-serif;
+  font-weight: 500;
+  height: 45px;
+  overflow: hidden;
+  position: relative;
+  width: 100%;
+  border-radius: 5px;
+  margin-bottom: 15px;
+}
+
+/* line 625, /Users/craigchilds/Projects/freestate/frontends/patient/src/sass/Components/_components.form.scss */
+.skinned-select__text {
+  background-color: #fff;
+  bottom: 0;
+  left: 0;
+  padding: 8px 15px;
+  position: absolute;
+  right: 0;
+  top: 0;
+  text-align: left;
+  transition: all 0.2s ease-in;
+}
+
+/* line 636, /Users/craigchilds/Projects/freestate/frontends/patient/src/sass/Components/_components.form.scss */
+.skinned-select__text:before {
+  bottom: 0;
+  background: #fff;
+  content: "";
+  height: 2px;
+  left: 0;
+  position: absolute;
+  width: 100%;
+}
+
+/* line 646, /Users/craigchilds/Projects/freestate/frontends/patient/src/sass/Components/_components.form.scss */
+.skinned-select__text:after {
+  border: 7px solid transparent;
+  border-color: rgba(145, 148, 157, 0.6) transparent transparent transparent;
+  content: "";
+  height: 0;
+  position: absolute;
+  right: 10px;
+  top: 16px;
+  width: 0;
+}
+
+/* line 671, /Users/craigchilds/Projects/freestate/frontends/patient/src/sass/Components/_components.form.scss */
+.skinned-select.form__error .skinned-select__text, .av-settings .opentok-hardware-setup-selector select.form__error .skinned-select__text {
+  border-color: red;
+  color: red;
+}
+
+/* line 676, /Users/craigchilds/Projects/freestate/frontends/patient/src/sass/Components/_components.form.scss */
+.skinned-select__select {
+  border: 1px solid transparent;
+  height: 100%;
+  left: 0;
+  /* opacity: 0; */
+  position: absolute;
+  top: 0;
+  width: 100%;
+  color: #515151;
+    font: normal 14px/16px 'Open Sans', sans-serif;
+    padding-left: 35px;
+}
+
+.hidden {
+  display: none !important;
+  visibility: hidden;
+}
+
+
+.vid-buttons a {
+    display: flex;
+    padding: 10px;
+    height: 70px;
+    justify-content: center;
+    align-items: center;
+    font-size: 20px;
+    color: #00779D;
+    border-bottom: 1px solid #ADADAD;
+}
+
+.hotline-notes{
+    border-bottom: 1px solid #e3dddd;
+    margin-bottom: 2% !important;
+}
+.hotline-avatar
+{
+    height: 80px;
+    width: 100px;
+}
+
+.hotline-modal-body
+{
+    height: 450px;
+    overflow: auto
+}
+
+.calendar-wrapper {
+    background: #fff;
+    margin-top: 20px;
+}
+.calendar-wrapper table {
+    clear: both;
+    width: 100%;
+    border: 1px solid #F5F5F5;
+    border-radius: 3px;
+    border-collapse: collapse;
+    color: #444;
+}
+.calendar-wrapper td {
+    height: 48px;
+    text-align: center;
+    vertical-align: middle;
+    border-right: 1px solid #F5F5F5;
+    border-top: 1px solid #F5F5F5;
+    width: 14.28571429%;
+}
+.calendar-wrapper td.not-current {
+    color: #c0c0c0;
+}
+.calendar-wrapper tr.days {
+    background: #EBEBEB;
+}
+.calendar-wrapper td.today {
+    font-weight: 700;
+    color: #28283b;
+    font-size: 1.5em;
+}
+.calendar-wrapper thead td {
+    border: none;
+    color: #28283b;
+    font-size: 18px;
+    background: #E6E6E6;
+}
+.daysSelections {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    gap: 15px;
+    height: 65px;
+}
+.daysSelections .dayBox {
+    height: 30px;
+    background: #FFFFFF 0% 0% no-repeat padding-box;
+    border: 1px solid #00B5EE;
+    border-radius: 4px;
+    margin-bottom: 20px;
+    padding: 1px 10px;
+}
+.dayBox .custom-control-input {
+    right: 0;
+    left: inherit;
+}
+.dayBox .custom-control {
+    padding-left: 0;
+}
+.dayBox .custom-control-label {
+    width: 100%;
+    cursor: pointer;
+    font-weight: 600;
+}
+.dayBox .custom-control-label::before {
+    right: 0rem;
+    left: inherit;
+    border: 1px solid #707070;
+    width: 19px;
+    height: 19px;
+}
+.dayBox .custom-checkbox .custom-control-label::before {
+    border-radius: 2px;
+}
+.dayBox .custom-control-input:checked~.custom-control-label::before {
+    color: #fff;
+    border-color: #00B5EE;
+    background-color: #00B5EE;
+}
+.dayBox .custom-control-input:focus~.custom-control-label::before {
+    box-shadow: none;
+}
+.dayBox .custom-control-label::after {
+    right: 0rem;
+    left: inherit;
+    width: 19px;
+    height: 19px;
+}
+.timeSidebarOverlay, .DetailSidebarOverlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 2;
+    width: 100vw;
+    height: 100vh;
+    background-color: #000;
+    opacity: .5;
+    display: none;
+}
+.timeSidebarOverlay.active, .DetailSidebarOverlay.active {
+    display: block;
+}
+
+.dateSidebarOverlay, .DetailSidebarOverlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 3;
+    width: 100vw;
+    height: 100vh;
+    background-color: #000;
+    opacity: .5;
+    display: none;
+}
+.dateSidebarOverlay.active, .DetailSidebarOverlay.active {
+    display: block;
+}
+.timeList {
+    height: calc(100vh - 305px);
+    overflow: auto;
+}
+.timeList::-webkit-scrollbar {
+    width: 8px;
+}
+.timeList::-webkit-scrollbar-track {
+    background: #f1f1f1;
+}
+.timeList::-webkit-scrollbar-thumb {
+    background-color: #ccc;
+}
+.timeSidebar, .DetailSidebar {
+    width: 380px;
+    border: 1px solid;
+    position: fixed;
+    right: -390px;
+    top: 0;
+    background: #FFFFFF;
+    box-shadow: 0px 3px 6px #00000029;
+    border: 1px solid #F5F5F5;
+    height: 100vh;
+    z-index: 3;
+    padding: 10px 20px;
+    display: block;
+    transition: all 0.3s;
+}
+.timeSidebar.active {
+    right: 0px;
+}
+
+.dateSidebar, .DetailSidebar {
+    width: 400px;
+    border: 1px solid;
+    position: fixed;
+    right: -390px;
+    top: 0;
+    background: #FFFFFF;
+    box-shadow: 0px 3px 6px #00000029;
+    border: 1px solid #F5F5F5;
+    height: 100vh;
+    z-index: 4;
+    padding: 10px 20px;
+    display: block;
+    transition: all 0.3s;
+}
+.dateSidebar.active {
+    right: 0px;
+}
+
+.DetailSidebar {
+    right: inherit;
+    left: -560px;
+    width: 556px;
+}
+.DetailSidebar.active {
+    left: 0;
+}
+.DetailSidebar .nav-tabs li {
+    font-size: 14px;
+    margin-right: 25px;
+}
+.DetailSidebar .nav-tabs li .nav-link {
+    padding: 6px 0px;
+}
+.DetailSidebar .tab-pane {
+    overflow: auto;
+    height: calc(100vh - 200px);
+    margin-top: 15px;
+    padding-right: 5px;
+}
+.DetailSidebar .tab-pane::-webkit-scrollbar {
+    width: 8px;
+}
+.DetailSidebar .tab-pane::-webkit-scrollbar-track {
+    background: #f1f1f1;
+}
+.DetailSidebar .tab-pane::-webkit-scrollbar-thumb {
+    background-color: #ccc;
+}
+
+.timeSidebar .doctors-Tabs .nav-tabs li {
+    flex: 1;
+}
+.timeSidebar .doctors-Tabs .nav-tabs li .nav-link {
+    width: 100%;
+    padding: 10px 16px;
+    font-weight: 600;
+}
+
+.dateSidebar .doctors-Tabs .nav-tabs li {
+    flex: 1;
+}
+.dateSidebar .doctors-Tabs .nav-tabs li .nav-link {
+    width: 100%;
+    padding: 10px 16px;
+    font-weight: 600;
+}
+
+.timeList .list-group-item {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    font-size: 13px;
+}
+
+.timeList .list-group-item span {
+    padding: 0 5px;
+    cursor: pointer;
+}
+.timeList .list-group-item span.active {
+    background: #FFE815;
+    border: 1px solid #FFE815;
+    border-radius: 4px;
+}
+
+.chat-actionBtn .btn{
+    background: #FFFFFF;
+    border: 1px solid #00779D;
+    border-radius: 3px;
+    color: #00779D;
+    margin-right: 10px;
+}
+.btn-outline-primary:not(:disabled):not(.disabled):active:focus {
+    box-shadow: none;
+}
+.btn-outline-primary:not(:disabled):not(.disabled):active {
+    color: #fff;
+    background-color: #00779e;
+    border-color: #00779D;
+}
+
+.chat-page h2 {
+    color: #505050;
+    font-size: 20px;
+    margin: 20px 0 0 0;
+}
+
+.chat-page .list, #videoCallPopup .list {
+    height: 50px;
+    border: 1px solid #C5C4C4;
+    border-radius: 4px;
+    font-size: 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+    margin-bottom: 15px;
+}
+.customHeight {
+    height: calc(100vh - 100px);
+}
+.chat-page .list span:last-child, #videoCallPopup .list span:last-child  {
+    color: #21A107;
+}
+
+.green {
+    color: #21A107;
+}
+
+.animSwitch input[type="checkbox"] {
+    position: relative;
+    width: 120px;
+    height: 30px;
+    -webkit-appearance: none;
+    background-color: #E7E7E7;
+    outline: none;
+    border-radius: 20px;
+    transition: all 0.5s;
+    cursor: pointer;
+}
+
+.animSwitch input:checked[type="checkbox"] {
+    background: #E7E7E7;
+}
+.animSwitch input:checked[type="checkbox"]::before {
+    content: "YES";
+}
+
+.animSwitch input[type="checkbox"]::before {
+    content: "NO";
+    position: absolute;
+    width: 70px;
+    height: 30px;
+    border-radius: 20px;
+    top: 0;
+    left: 0;
+    background: #00779D;
+    transition: 0.5s;
+    color: #ffffff;
+    text-align: center;
+    font-size: 18px;
+    line-height: 31px;
+}
+.animSwitch input:checked[type="checkbox"]::before {
+    left: 50px;
+}
+
+/* line 17, /Users/craigchilds/Projects/freestate/frontends/patient/src/sass/Components/_components.calendar.scss */
+.clndr .day.event {
+  cursor: pointer;
+}
+
+/* line 21, /Users/craigchilds/Projects/freestate/frontends/patient/src/sass/Components/_components.calendar.scss */
+.clndr .day-marker .day-contents {
+  color: #a7a7a7 !important;
+}
+
+/* line 25, /Users/craigchilds/Projects/freestate/frontends/patient/src/sass/Components/_components.calendar.scss */
+.clndr .clndr-table {
+  min-width: 300px;
+  max-width: 360px;
+  width: 100%;
+}
+
+/* line 30, /Users/craigchilds/Projects/freestate/frontends/patient/src/sass/Components/_components.calendar.scss */
+.clndr .clndr-table td,
+.clndr .clndr-table th {
+  padding: 10px;
+  text-align: center;
+}
+
+/* line 35, /Users/craigchilds/Projects/freestate/frontends/patient/src/sass/Components/_components.calendar.scss */
+.clndr .clndr-table td.header-day,
+.clndr .clndr-table th.header-day {
+  color: black;
+  font: 500 16px/16px "Montserrat", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
+  letter-spacing: -0.16px;
+      background: #EBEBEB
+      height: 48px;
+    text-align: center;
+    vertical-align: middle;
+    border-right: 1px solid #F5F5F5;
+    border-top: 1px solid #F5F5F5;
+    border-bottom: 1px solid #F5F5F5;
+    width: 14.28571429%;
+}
+
+/* line 41, /Users/craigchilds/Projects/freestate/frontends/patient/src/sass/Components/_components.calendar.scss */
+.clndr .clndr-table td .day-contents,
+.clndr .clndr-table th .day-contents {
+  color: #13b5ea;
+  font: 500 16px/16px "Montserrat", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
+  letter-spacing: -0.16px;
+}
+
+/* line 50, /Users/craigchilds/Projects/freestate/frontends/patient/src/sass/Components/_components.calendar.scss */
+.clndr .clndr-table td.past .day-contents, .clndr .clndr-table td.last-month .day-contents, .clndr .clndr-table td.unavailable .day-contents,
+.clndr .clndr-table th.past .day-contents,
+.clndr .clndr-table th.last-month .day-contents,
+.clndr .clndr-table th.unavailable .day-contents {
+  color: #28283b;
+}
+
+/* line 55, /Users/craigchilds/Projects/freestate/frontends/patient/src/sass/Components/_components.calendar.scss */
+.clndr .clndr-table td.month,
+.clndr .clndr-table th.month {
+ /* color: #757575;
+  font: 500 14px/20px "Montserrat", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
+  letter-spacing: -0.14px;
+  padding-top: 10px;
+  text-transform: uppercase;
+  */
+      color: #757575;
+    /* font: 500 14px/20px "Montserrat", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif; */
+    /* letter-spacing: -0.14px; */
+    /* padding-top: 10px; */
+    /* text-transform: uppercase; */
+    border: none;
+    color: #28283b;
+    font-size: 18px;
+    background: #E6E6E6;
+}
+
+clndr-table head tr{
+      background: #EBEBEB
+}
+
+/* line 64, /Users/craigchilds/Projects/freestate/frontends/patient/src/sass/Components/_components.calendar.scss */
+.clndr .clndr-table td {
+  cursor: pointer;
+  height: 48px;
+    text-align: center;
+    vertical-align: middle;
+    /*border-right: 1px solid #F5F5F5;
+    border-top: 1px solid #F5F5F5;*/
+    border: 1px solid #F5F5F5;
+    width: 14.28571429%;
+}
+
+.calendar {
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    -webkit-justify-content: flex-start;
+    -ms-flex-pack: start;
+    justify-content: flex-start;
+}
+
+.calendar__item {
+    min-width: 340px;
+    max-width: 400px;
+    padding: 30px 61px 33px 24px;
+}
+
+/*****************************ChatRoom***************************/
+.no-gutters {
+    height: calc(100% - 0px);
+}
+.no-gutters {
+    margin-right: 0;
+    margin-left: 0;
+}
+
+.chat-div {
+    height: calc(100% - 0px);
+}
+/* line 1, /Users/craigchilds/Projects/freestate/frontends/patient/src/sass/Blocks/_blocks.chat.scss */
+.chat {
+  
+  float: right;
+  height: 100%;
+  position: relative;
+  width: 100%;
+}
+
+/* line 8, /Users/craigchilds/Projects/freestate/frontends/patient/src/sass/Blocks/_blocks.chat.scss */
+.chat__typing {
+  color: #1f8cc5f2;
+  font-size: 12px;
+  padding: 10px;
+  position: absolute;
+  right: 0px;
+  /*text-align: right;*/
+  top: -37px;
+  width: 100%;
+}
+
+/* line 19, /Users/craigchilds/Projects/freestate/frontends/patient/src/sass/Blocks/_blocks.chat.scss */
+.chat__transcript {
+  border-bottom: 1px solid #d7d7d7;
+  height: calc(100% - 70px);
+  overflow-y: scroll;
+  padding: 0 10px 30px;
+}
+
+/* line 25, /Users/craigchilds/Projects/freestate/frontends/patient/src/sass/Blocks/_blocks.chat.scss */
+.chat__transcript__row {
+  margin-bottom: 10px;
+}
+
+/* line 28, /Users/craigchilds/Projects/freestate/frontends/patient/src/sass/Blocks/_blocks.chat.scss */
+.chat__transcript__row--timestamp {
+  color: #91949d;
+  font: 500 12px/12px "Montserrat", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
+  margin-top: 30px;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+/* line 37, /Users/craigchilds/Projects/freestate/frontends/patient/src/sass/Blocks/_blocks.chat.scss */
+.chat__transcript__row--info .chat-item-text {
+  background: transparent !important;
+  color: #91949d !important;
+  font-size: 12px !important;
+}
+
+/* line 45, /Users/craigchilds/Projects/freestate/frontends/patient/src/sass/Blocks/_blocks.chat.scss */
+.chat__transcript__item {
+  overflow: hidden;
+}
+
+/* line 48, /Users/craigchilds/Projects/freestate/frontends/patient/src/sass/Blocks/_blocks.chat.scss */
+.chat__transcript__item .chat-item-timestamp {
+  color: #91949d;
+  font: 500 12px/12px "Montserrat", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
+  margin-bottom: 3px;
+}
+
+/* line 54, /Users/craigchilds/Projects/freestate/frontends/patient/src/sass/Blocks/_blocks.chat.scss */
+.chat__transcript__item .chat-item-text {
+  border-radius: 5px;
+  font: 500 16px/20px "Montserrat", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
+  overflow-wrap: break-word;
+  padding: 10px;
+  
+  width: 50%;
+}
+
+/* line 64, /Users/craigchilds/Projects/freestate/frontends/patient/src/sass/Blocks/_blocks.chat.scss */
+.chat__transcript__item--left .chat-item-timestamp {
+  text-align: right;
+}
+
+/* line 67, /Users/craigchilds/Projects/freestate/frontends/patient/src/sass/Blocks/_blocks.chat.scss */
+.chat__transcript__item--left .chat-item-text {
+  background: #B9FFBF;
+  color: #0094cc;    
+  float: left;
+  font-size: 14px;
+  padding: 5px;
+}
+
+/* line 75, /Users/craigchilds/Projects/freestate/frontends/patient/src/sass/Blocks/_blocks.chat.scss */
+.chat__transcript__item--right .chat-item-timestamp {
+  text-align: right;
+ margin-top: 8px;
+}
+
+/* line 78, /Users/craigchilds/Projects/freestate/frontends/patient/src/sass/Blocks/_blocks.chat.scss */
+.chat__transcript__item--right .chat-item-text {
+  background: #E2F8FF;
+    color: black;
+    float: right;
+    font-size: 14px;
+    padding: 10px;
+}
+
+/* line 89, /Users/craigchilds/Projects/freestate/frontends/patient/src/sass/Blocks/_blocks.chat.scss */
+.chat .files__row {
+  border-top: 1px solid rgba(215, 215, 215, 0.5);
+  border-bottom: 1px solid rgba(215, 215, 215, 0.5);
+  margin-top: 20px;
+  margin-bottom: 20px;
+  padding-top: 10px;
+}
+
+/* line 97, /Users/craigchilds/Projects/freestate/frontends/patient/src/sass/Blocks/_blocks.chat.scss */
+.chat__input {
+  overflow: hidden;
+  padding: 0px;
+  display: flex;
+  justify-content: space-between;
+}
+
+/* line 101, /Users/craigchilds/Projects/freestate/frontends/patient/src/sass/Blocks/_blocks.chat.scss */
+.chat__input__textarea {
+  border: 0 none;
+  color: #91949d;
+  font: 500 16px/20px "Montserrat", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
+  float: left;
+  height: 70px;
+  outline: none;
+  padding: 10px;
+  resize: none;
+  width: calc(100% - 60px);
+}
+
+/* line 23, /Users/craigchilds/Projects/freestate/frontends/patient/src/sass/Tools/_tools.mixins.scss */
+.chat__input__textarea::-webkit-input-placeholder {
+  color: #a0a0a0;
+}
+
+/* line 24, /Users/craigchilds/Projects/freestate/frontends/patient/src/sass/Tools/_tools.mixins.scss */
+.chat__input__textarea:-moz-placeholder {
+  color: #a0a0a0;
+}
+
+/* line 25, /Users/craigchilds/Projects/freestate/frontends/patient/src/sass/Tools/_tools.mixins.scss */
+.chat__input__textarea:-ms-input-placeholder {
+  color: #a0a0a0;
+}
+
+/* line 26, /Users/craigchilds/Projects/freestate/frontends/patient/src/sass/Tools/_tools.mixins.scss */
+.chat__input__textarea.placeholder {
+  color: #a0a0a0;
+}
+
+/* line 117, /Users/craigchilds/Projects/freestate/frontends/patient/src/sass/Blocks/_blocks.chat.scss */
+.chat__input__actions {
+  height: 70px;
+    position: relative;
+    width: 170px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* line 127, /Users/craigchilds/Projects/freestate/frontends/patient/src/sass/Blocks/_blocks.chat.scss */
+.chat__input__actions .button__chat-send {
+      border: 0 none;
+    bottom: 0;
+    color: white;
+    font: 700 13px/13px "Montserrat", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
+    padding: 0;
+    right: 0;
+    width: 60px;
+    height: 70px;
+    background: #00779D;
+}
+
+/* line 137, /Users/craigchilds/Projects/freestate/frontends/patient/src/sass/Blocks/_blocks.chat.scss */
+.firefox .chat__input__actions .button__chat-send {
+  font-family: "Montserrat", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
+}
+
+/* line 144, /Users/craigchilds/Projects/freestate/frontends/patient/src/sass/Blocks/_blocks.chat.scss */
+.chat .invite-to-chat {
+  background: #f7f7f7;
+  height: 100%;
+  left: 100%;
+  opacity: 0;
+  padding: 30px;
+  position: absolute;
+  top: 0;
+  transition: opacity 200ms ease-in;
+  transition-delay: 0.1s;
+  width: 100%;
+  z-index: 2;
+}
+
+/* line 157, /Users/craigchilds/Projects/freestate/frontends/patient/src/sass/Blocks/_blocks.chat.scss */
+.chat .invite-to-chat--display {
+  left: 0;
+  opacity: 1;
+}
+
+/* line 162, /Users/craigchilds/Projects/freestate/frontends/patient/src/sass/Blocks/_blocks.chat.scss */
+.chat .invite-to-chat__body {
+  margin-top: 25px;
+}
+
+/* line 166, /Users/craigchilds/Projects/freestate/frontends/patient/src/sass/Blocks/_blocks.chat.scss */
+.chat .invite-to-chat__title {
+  color: #757575;
+  font: 500 18px/18px "Montserrat", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
+}
+
+/* line 171, /Users/craigchilds/Projects/freestate/frontends/patient/src/sass/Blocks/_blocks.chat.scss */
+.chat .invite-to-chat__filters {
+  margin: 30px 0 40px;
+}
+
+/* line 174, /Users/craigchilds/Projects/freestate/frontends/patient/src/sass/Blocks/_blocks.chat.scss */
+.chat .invite-to-chat__filters__filter {
+  color: rgba(19, 181, 234, 0.4);
+  font: 500 16px/20px "Montserrat", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
+  text-decoration: none;
+}
+
+/* line 179, /Users/craigchilds/Projects/freestate/frontends/patient/src/sass/Blocks/_blocks.chat.scss */
+.chat .invite-to-chat__filters__filter:last-child {
+  margin-right: 0;
+}
+
+/* line 183, /Users/craigchilds/Projects/freestate/frontends/patient/src/sass/Blocks/_blocks.chat.scss */
+.chat .invite-to-chat__filters__filter--current {
+  color: #13b5ea;
+  display: inline-block;
+  margin-right: 10px;
+}
+
+/* line 188, /Users/craigchilds/Projects/freestate/frontends/patient/src/sass/Blocks/_blocks.chat.scss */
+.chat .invite-to-chat__filters__filter--current:after {
+  background: #13b5ea;
+  content: "";
+  display: block;
+  height: 2px;
+  position: relative;
+  top: 5px;
+  width: 100%;
+}
+
+/* line 201, /Users/craigchilds/Projects/freestate/frontends/patient/src/sass/Blocks/_blocks.chat.scss */
+.chat .invite-to-chat__available {
+  margin-top: 20px;
+  height: 220px;
+  overflow-y: auto;
+}
+
+/* line 204, /Users/craigchilds/Projects/freestate/frontends/patient/src/sass/Blocks/_blocks.chat.scss */
+.chat .invite-to-chat__available__item {
+  color: #13b5ea;
+  display: block;
+  font: 500 16px/20px "Montserrat", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
+  margin-bottom: 6px;
+  text-decoration: none;
+}
+
+/* line 211, /Users/craigchilds/Projects/freestate/frontends/patient/src/sass/Blocks/_blocks.chat.scss */
+.chat .invite-to-chat__available__item:before {
+ /* background: #88c425;*/
+  border-radius: 50%;
+  content: "";
+  display: inline-block;
+  height: 10px;
+  margin-right: 10px;
+  width: 10px;
+}
+
+/* line 222, /Users/craigchilds/Projects/freestate/frontends/patient/src/sass/Blocks/_blocks.chat.scss */
+.chat .invite-to-chat__available__item--unavailable:before {
+  background: red;
+}
+
+/* line 231, /Users/craigchilds/Projects/freestate/frontends/patient/src/sass/Blocks/_blocks.chat.scss */
+.chat .drop-files {
+  background: #f7f7f7;
+  height: 100%;
+  left: 100%;
+  opacity: 0;
+  padding: 30px;
+  position: absolute;
+  top: 0;
+  transition: opacity 200ms ease-in;
+  transition-delay: 0.1s;
+  width: 100%;
+  z-index: 3;
+}
+
+/* line 244, /Users/craigchilds/Projects/freestate/frontends/patient/src/sass/Blocks/_blocks.chat.scss */
+.chat .drop-files--display {
+  left: 0;
+  opacity: 1;
+}
+
+/* line 249, /Users/craigchilds/Projects/freestate/frontends/patient/src/sass/Blocks/_blocks.chat.scss */
+.chat .drop-files__content {
+  font: 500 24px/30px "Montserrat", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
+  position: absolute;
+  text-align: center;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+      -ms-transform: translateY(-50%);
+          transform: translateY(-50%);
+  width: calc(100% - 60px);
+}
+
+/* line 258, /Users/craigchilds/Projects/freestate/frontends/patient/src/sass/Blocks/_blocks.chat.scss */
+.chat .drop-files__content img,
+.chat .drop-files__content svg {
+  display: block;
+  height: 60px;
+  margin: 0 auto 20px;
+  width: 44px;
+}
+
+/* line 270, /Users/craigchilds/Projects/freestate/frontends/patient/src/sass/Blocks/_blocks.chat.scss */
+.chat .input-actions-top {
+    display: flex;
+    justify-content: center;
+    width: 77px;
+    gap: 13px;
+}
+
+/* line 278, /Users/craigchilds/Projects/freestate/frontends/patient/src/sass/Blocks/_blocks.chat.scss */
+.chat-form {
+  position: relative;
+}
+
+/* line 1, /Users/craigchilds/Projects/freestate/frontends/patient/src/sass/Blocks/_blocks.content.scss */
+.content {
+  padding: 50px 35px;
+}
+
+/* line 4, /Users/craigchilds/Projects/freestate/frontends/patient/src/sass/Blocks/_blocks.content.scss */
+.content--scrollable {
+  overflow: scroll;
+  height: 100%;
+}
+
+/* line 9, /Users/craigchilds/Projects/freestate/frontends/patient/src/sass/Blocks/_blocks.content.scss */
+.content--chat {
+  float: left;
+  width: calc(100% - 490px);
+}
+
+/* line 14, /Users/craigchilds/Projects/freestate/frontends/patient/src/sass/Blocks/_blocks.content.scss */
+.content--left, .content__left {
+  float: none;
+  width: 100%;
+}
+
+.input-actions-top .button__add-doctor {
+    color: white;
+    font-size: 18px;
+}
+
+.button__add-doctor {
+    height: 18px;
+    margin-right: 6px;
+    text-decoration: none;
+    width: 16px;
+}
+
+.button__add-doctor img, .button__add-doctor svg {
+    height: 18px;
+    width: 16px;
+}
+
+svg:not(:root) {
+    overflow: hidden;
+}
+/* line 166, /Users/craigchilds/Projects/freestate/frontends/patient/src/sass/Components/_components.buttons.scss */
+.button__add-doctor img *,
+.button__add-doctor svg * {
+  fill: #13b5ea;
+  transition: fill 200ms ease;
+}
+
+/* line 174, /Users/craigchilds/Projects/freestate/frontends/patient/src/sass/Components/_components.buttons.scss */
+.no-touch .button__add-doctor:hover svg * {
+  fill: #cccccc;
+}
+
+/* line 181, /Users/craigchilds/Projects/freestate/frontends/patient/src/sass/Components/_components.buttons.scss */
+.button__upload-file {
+  height: 15px;
+  text-decoration: none;
+  width: 11px;
+}
+
+/* line 186, /Users/craigchilds/Projects/freestate/frontends/patient/src/sass/Components/_components.buttons.scss */
+.button__upload-file--bump-right {
+  float: right;
+  margin-right: 5px;
+}
+
+/* line 191, /Users/craigchilds/Projects/freestate/frontends/patient/src/sass/Components/_components.buttons.scss */
+.button__upload-file img,
+.button__upload-file svg {
+  height: 18px;
+  width: 16px;
+}
+
+/* line 196, /Users/craigchilds/Projects/freestate/frontends/patient/src/sass/Components/_components.buttons.scss */
+.button__upload-file img *,
+.button__upload-file svg * {
+  fill: #13b5ea;
+  transition: fill 200ms ease;
+}
+
+/* line 204, /Users/craigchilds/Projects/freestate/frontends/patient/src/sass/Components/_components.buttons.scss */
+.no-touch .button__upload-file:hover svg * {
+  fill: #cccccc;
+}
+
+/**** Video Call *********************************************/
+
+/* line 1, /Users/craigchilds/Projects/freestate/frontends/patient/src/sass/Blocks/_blocks.incoming-call.scss */
+.incoming-call {
+  background: rgba(0, 0, 0, 0.7);
+  height: 100%;
+  left: 0;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 9999;
+}
+
+/* line 10, /Users/craigchilds/Projects/freestate/frontends/patient/src/sass/Blocks/_blocks.incoming-call.scss */
+.incoming-call__inner {
+  left: 50%;
+  max-width: 440px;
+  padding: 20px;
+  position: absolute;
+  -webkit-transform: translate(-50%, -50%);
+      -ms-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  top: 50%;
+}
+
+/* line 19, /Users/craigchilds/Projects/freestate/frontends/patient/src/sass/Blocks/_blocks.incoming-call.scss */
+.incoming-call__title {
+  color: #fff;
+  margin-bottom: 40px;
+  text-align: center;
+}
+
+/* line 24, /Users/craigchilds/Projects/freestate/frontends/patient/src/sass/Blocks/_blocks.incoming-call.scss */
+.incoming-call__title__first {
+  font: 500 30px/36px "Montserrat", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
+  letter-spacing: -0.3px;
+}
+
+/* line 29, /Users/craigchilds/Projects/freestate/frontends/patient/src/sass/Blocks/_blocks.incoming-call.scss */
+.incoming-call__title__last {
+  font: 500 30px/36px "Montserrat", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
+  letter-spacing: -0.3px;
+}
+
+/* line 35, /Users/craigchilds/Projects/freestate/frontends/patient/src/sass/Blocks/_blocks.incoming-call.scss */
+.incoming-call__message {
+  color: #fff;
+  font: 500 16px/18px "Montserrat", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
+  margin: 30px 0;
+  text-align: center;
+}
+
+/* line 42, /Users/craigchilds/Projects/freestate/frontends/patient/src/sass/Blocks/_blocks.incoming-call.scss */
+.incoming-call__controls {
+  text-align: center;
+}
+
+/* line 45, /Users/craigchilds/Projects/freestate/frontends/patient/src/sass/Blocks/_blocks.incoming-call.scss */
+.incoming-call__controls__action {
+  display: inline-block;
+  border-radius: 50%;
+  position: relative;
+}
+
+/* line 50, /Users/craigchilds/Projects/freestate/frontends/patient/src/sass/Blocks/_blocks.incoming-call.scss */
+.incoming-call__controls__action img, .incoming-call__controls__action svg {
+  left: 50%;
+  position: absolute;
+  -webkit-transform: translate(-50%, -50%);
+      -ms-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  top: 50%;
+}
+
+/* line 56, /Users/craigchilds/Projects/freestate/frontends/patient/src/sass/Blocks/_blocks.incoming-call.scss */
+.incoming-call__controls__action img *, .incoming-call__controls__action svg * {
+  fill: #fff;
+}
+
+/* line 61, /Users/craigchilds/Projects/freestate/frontends/patient/src/sass/Blocks/_blocks.incoming-call.scss */
+.incoming-call__controls__action--accept {
+  background: #88c425;
+  height: 80px;
+  margin-right: 5px;
+  width: 80px;
+}
+
+/* line 67, /Users/craigchilds/Projects/freestate/frontends/patient/src/sass/Blocks/_blocks.incoming-call.scss */
+.incoming-call__controls__action--accept img, .incoming-call__controls__action--accept svg {
+  height: 30px;
+  width: 30px;
+}
+
+/* line 73, /Users/craigchilds/Projects/freestate/frontends/patient/src/sass/Blocks/_blocks.incoming-call.scss */
+.incoming-call__controls__action--deny {
+  background: #fa023c;
+  height: 60px;
+  margin-left: 5px;
+  -webkit-transform: translateY(-9px);
+      -ms-transform: translateY(-9px);
+          transform: translateY(-9px);
+  width: 60px;
+}
+
+/* line 80, /Users/craigchilds/Projects/freestate/frontends/patient/src/sass/Blocks/_blocks.incoming-call.scss */
+.incoming-call__controls__action--deny img, .incoming-call__controls__action--deny svg {
+  height: 25px;
+  width: 25px;
+}
+
+/**/
+/* line 1, /Users/craigchilds/Projects/freestate/frontends/patient/src/sass/Blocks/_blocks.av-settings.scss */
+.av-settings {
+  display: none;
+  position: relative;
+  max-width: 360px;
+}
+
+/* line 6, /Users/craigchilds/Projects/freestate/frontends/patient/src/sass/Blocks/_blocks.av-settings.scss */
+.av-settings.active {
+  display: block;
+}
+
+/* line 10, /Users/craigchilds/Projects/freestate/frontends/patient/src/sass/Blocks/_blocks.av-settings.scss */
+.av-settings__overlay {
+  width: 50%;
+  position: absolute;
+  top: 0;
+  height: auto;
+  z-index: 99;
+  background: #f9f9f9;
+  border-right: 1px solid #d7d7d7;
+  left: -100%;
+  transition: .5s left ease-in-out;
+  padding: 30px;
+  max-width: 360px;
+  height: 100% !important;
+}
+
+/* line 24, /Users/craigchilds/Projects/freestate/frontends/patient/src/sass/Blocks/_blocks.av-settings.scss */
+.av-settings__overlay.active {
+  left: 0;
+}
+
+/* line 29, /Users/craigchilds/Projects/freestate/frontends/patient/src/sass/Blocks/_blocks.av-settings.scss */
+.av-settings__close {
+  float: right;
+  margin-top: 20px;
+}
+
+/* line 35, /Users/craigchilds/Projects/freestate/frontends/patient/src/sass/Blocks/_blocks.av-settings.scss */
+.av-settings__container.active .loading {
+  display: none;
+}
+
+/* line 40, /Users/craigchilds/Projects/freestate/frontends/patient/src/sass/Blocks/_blocks.av-settings.scss */
+.av-settings .opentok-hardware-setup > div {
+  margin-top: 30px;
+}
+
+/* line 49, /Users/craigchilds/Projects/freestate/frontends/patient/src/sass/Blocks/_blocks.av-settings.scss */
+.av-settings .opentok-hardware-setup-selector {
+  margin-bottom: 20px;
+}
+
+/* line 57, /Users/craigchilds/Projects/freestate/frontends/patient/src/sass/Blocks/_blocks.av-settings.scss */
+.av-settings .opentok-hardware-setup-camera .opentok-hardware-setup-preview {
+  height: 270px;
+}
+
+/* line 60, /Users/craigchilds/Projects/freestate/frontends/patient/src/sass/Blocks/_blocks.av-settings.scss */
+.av-settings .opentok-hardware-setup-camera .opentok-hardware-setup-preview .OT_publisher {
+  position: relative !important;
+}
+
+/* line 67, /Users/craigchilds/Projects/freestate/frontends/patient/src/sass/Blocks/_blocks.av-settings.scss */
+.av-settings .opentok-hardware-setup-mic .opentok-hardware-setup-preview {
+  display: none;
+}
+
+/* line 21, /Users/craigchilds/Projects/freestate/frontends/patient/src/sass/Blocks/_blocks.stream.scss */
+.stream-controls {
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  font-size: 0;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  left: 50%;
+  margin: 0 auto;
+  position: absolute;
+  top: 85px;
+  text-align: center;
+  -webkit-transform: translateX(-50%);
+      -ms-transform: translateX(-50%);
+          transform: translateX(-50%);
+  width: 100%;
+  z-index: 300;
+}
+
+/* line 35, /Users/craigchilds/Projects/freestate/frontends/patient/src/sass/Blocks/_blocks.stream.scss */
+.stream-controls__item {
+  border-radius: 50%;
+  display: inline-block;
+  height: 60px;
+  margin: 0 4px;
+  position: relative;
+  width: 60px;
+}
+
+/* line 43, /Users/craigchilds/Projects/freestate/frontends/patient/src/sass/Blocks/_blocks.stream.scss */
+.stream-controls__item--end {
+  background: #fa023c;
+}
+
+/* line 46, /Users/craigchilds/Projects/freestate/frontends/patient/src/sass/Blocks/_blocks.stream.scss */
+.stream-controls__item--end img,
+.stream-controls__item--end svg {
+  left: 50%;
+  position: absolute;
+  top: 50%;
+  -webkit-transform: translate(-50%, -50%);
+      -ms-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  transition: -webkit-transform 200ms ease;
+  transition: transform 200ms ease;
+  transition: transform 200ms ease, -webkit-transform 200ms ease;
+  width: 60%;
+}
+
+/* line 57, /Users/craigchilds/Projects/freestate/frontends/patient/src/sass/Blocks/_blocks.stream.scss */
+.no-touch .stream-controls__item--end:hover img, .no-touch .stream-controls__item--end:hover svg {
+  -webkit-transform: translate(-50%, -50%) rotate(10deg) !important;
+      -ms-transform: translate(-50%, -50%) rotate(10deg) !important;
+          transform: translate(-50%, -50%) rotate(10deg) !important;
+}
+
+/* line 64, /Users/craigchilds/Projects/freestate/frontends/patient/src/sass/Blocks/_blocks.stream.scss */
+.stream-controls__item--mute {
+  background: #13b5ea;
+  transition: background 300ms ease;
+}
+
+/* line 68, /Users/craigchilds/Projects/freestate/frontends/patient/src/sass/Blocks/_blocks.stream.scss */
+.stream-controls__item--mute img, .stream-controls__item--mute svg {
+  display: block;
+  height: 70%;
+  left: 50%;
+  position: absolute;
+  top: 50%;
+  -webkit-transform: translate(-50%, -50%);
+      -ms-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+
+/* line 76, /Users/craigchilds/Projects/freestate/frontends/patient/src/sass/Blocks/_blocks.stream.scss */
+.stream-controls__item--mute img *, .stream-controls__item--mute svg * {
+  fill: #fff;
+  transition: fill 300ms ease;
+}
+
+/* line 82, /Users/craigchilds/Projects/freestate/frontends/patient/src/sass/Blocks/_blocks.stream.scss */
+.stream-controls__item--mute .icon-mic {
+  opacity: 1;
+  transition: opacity 300ms ease;
+}
+
+/* line 87, /Users/craigchilds/Projects/freestate/frontends/patient/src/sass/Blocks/_blocks.stream.scss */
+.stream-controls__item--mute .icon-mic-muted {
+  opacity: 0;
+  transition: opacity 300ms ease;
+}
+
+/* line 92, /Users/craigchilds/Projects/freestate/frontends/patient/src/sass/Blocks/_blocks.stream.scss */
+.no-touch .stream-controls__item--mute:hover {
+  background: #ffed51;
+}
+
+/* line 97, /Users/craigchilds/Projects/freestate/frontends/patient/src/sass/Blocks/_blocks.stream.scss */
+.stream-controls__item--mute.audio-muted .icon-mic {
+  opacity: 0;
+}
+
+/* line 101, /Users/craigchilds/Projects/freestate/frontends/patient/src/sass/Blocks/_blocks.stream.scss */
+.stream-controls__item--mute.audio-muted .icon-mic-muted {
+  opacity: 1;
+}
+
+/* line 107, /Users/craigchilds/Projects/freestate/frontends/patient/src/sass/Blocks/_blocks.stream.scss */
+.stream-controls__item--flashlight {
+  background: #eaeaea;
+  transition: background 300ms ease;
+}
+
+/* line 111, /Users/craigchilds/Projects/freestate/frontends/patient/src/sass/Blocks/_blocks.stream.scss */
+.no-touch .stream-controls__item--flashlight:hover {
+  background: #13b5ea;
+}
+
+/* line 111, /home/prashant/freestate_staging/freestate/frontends/hcp/src/sass/Blocks/_blocks.stream.scss */
+.no-touch .stream-controls__item--flashlight:hover {
+  background: #13b5ea;
+}
+
+/* line 116, /home/prashant/freestate_staging/freestate/frontends/hcp/src/sass/Blocks/_blocks.stream.scss */
+.stream-controls__item--pause {
+  background: #13b5ea;
+  transition: opacity 300ms ease, background 300ms ease;
+}
+
+/* line 120, /home/prashant/freestate_staging/freestate/frontends/hcp/src/sass/Blocks/_blocks.stream.scss */
+.stream-controls__item--pause img, .stream-controls__item--pause svg {
+  height: 50%;
+  left: 50%;
+  position: absolute;
+  top: 50%;
+  -ms-transform: translate(-50%, -50%);
+      transform: translate(-50%, -50%);
+}
+
+/* line 127, /home/prashant/freestate_staging/freestate/frontends/hcp/src/sass/Blocks/_blocks.stream.scss */
+.stream-controls__item--pause img *, .stream-controls__item--pause svg * {
+  fill: #fff;
+  transition: fill 300ms ease;
+}
+
+/* line 133, /home/prashant/freestate_staging/freestate/frontends/hcp/src/sass/Blocks/_blocks.stream.scss */
+.stream-controls__item--pause .pause-icon {
+  opacity: 1;
+}
+
+/* line 137, /home/prashant/freestate_staging/freestate/frontends/hcp/src/sass/Blocks/_blocks.stream.scss */
+.stream-controls__item--pause .resume-icon {
+  opacity: 0;
+  -ms-transform: translate(-41%, -50%);
+      transform: translate(-41%, -50%);
+}
+
+/* line 142, /home/prashant/freestate_staging/freestate/frontends/hcp/src/sass/Blocks/_blocks.stream.scss */
+.no-touch .stream-controls__item--pause:hover {
+  background: #88c425;
+}
+
+/* line 146, /home/prashant/freestate_staging/freestate/frontends/hcp/src/sass/Blocks/_blocks.stream.scss */
+.stream-controls__item--pause.paused {
+  background: #88c425 !important;
+}
+
+/* line 149, /home/prashant/freestate_staging/freestate/frontends/hcp/src/sass/Blocks/_blocks.stream.scss */
+.no-touch .stream-controls__item--pause.paused:hover {
+  background: #13b5ea !important;
+}
+
+/* line 153, /home/prashant/freestate_staging/freestate/frontends/hcp/src/sass/Blocks/_blocks.stream.scss */
+.stream-controls__item--pause.paused .pause-icon {
+  opacity: 0;
+}
+
+/* line 157, /home/prashant/freestate_staging/freestate/frontends/hcp/src/sass/Blocks/_blocks.stream.scss */
+.stream-controls__item--pause.paused .resume-icon {
+  opacity: 1;
+}
+
+/* line 163, /home/prashant/freestate_staging/freestate/frontends/hcp/src/sass/Blocks/_blocks.stream.scss */
+.stream-controls__item--stop {
+  background: #eaeaea;
+  transition: opacity 300ms ease, background 300ms ease;
+}
+
+/* line 167, /home/prashant/freestate_staging/freestate/frontends/hcp/src/sass/Blocks/_blocks.stream.scss */
+.stream-controls__item--stop img, .stream-controls__item--stop svg {
+  height: 40%;
+  left: 50%;
+  position: absolute;
+  top: 50%;
+  -ms-transform: translate(-50%, -50%);
+      transform: translate(-50%, -50%);
+}
+
+/* line 174, /home/prashant/freestate_staging/freestate/frontends/hcp/src/sass/Blocks/_blocks.stream.scss */
+.stream-controls__item--stop img *, .stream-controls__item--stop svg * {
+  fill: #13b5ea;
+  transition: fill 300ms ease;
+}
+
+/* line 180, /home/prashant/freestate_staging/freestate/frontends/hcp/src/sass/Blocks/_blocks.stream.scss */
+.no-touch .stream-controls__item--stop:hover {
+  background: #fa023c;
+}
+
+/* line 184, /home/prashant/freestate_staging/freestate/frontends/hcp/src/sass/Blocks/_blocks.stream.scss */
+.no-touch .stream-controls__item--stop:hover img *, .no-touch .stream-controls__item--stop:hover svg * {
+  fill: #fff;
+}
+
+/* line 116, /Users/craigchilds/Projects/freestate/frontends/patient/src/sass/Blocks/_blocks.stream.scss */
+.stream-controls__item--stephoscope {
+  background: #eaeaea;
+  transition: background 300ms ease;
+  position: relative;
+}
+
+/* line 121, /Users/craigchilds/Projects/freestate/frontends/patient/src/sass/Blocks/_blocks.stream.scss */
+.stream-controls__item--stephoscope img, .stream-controls__item--stephoscope svg {
+  height: 65%;
+  left: 50%;
+  position: absolute;
+  top: 50%;
+  -webkit-transform: translate(-50%, -43%);
+      -ms-transform: translate(-50%, -43%);
+          transform: translate(-50%, -43%);
+}
+
+/* line 128, /Users/craigchilds/Projects/freestate/frontends/patient/src/sass/Blocks/_blocks.stream.scss */
+.stream-controls__item--stephoscope img *, .stream-controls__item--stephoscope svg * {
+  fill: #13b5ea;
+  transition: fill 300ms ease;
+}
+
+/* line 134, /Users/craigchilds/Projects/freestate/frontends/patient/src/sass/Blocks/_blocks.stream.scss */
+.no-touch .stream-controls__item--stephoscope:hover {
+  background: #13b5ea;
+}
+
+/* line 137, /Users/craigchilds/Projects/freestate/frontends/patient/src/sass/Blocks/_blocks.stream.scss */
+.no-touch .stream-controls__item--stephoscope:hover svg * {
+  fill: #fff;
+}
+
+/* line 143, /Users/craigchilds/Projects/freestate/frontends/patient/src/sass/Blocks/_blocks.stream.scss */
+.stream-controls__item--privacy {
+  background: #eaeaea;
+  transition: background 300ms ease;
+  position: relative;
+}
+
+/* line 148, /Users/craigchilds/Projects/freestate/frontends/patient/src/sass/Blocks/_blocks.stream.scss */
+.stream-controls__item--privacy img, .stream-controls__item--privacy svg {
+  height: 46%;
+  left: 50%;
+  max-width: 60px;
+  position: absolute;
+  top: 50%;
+  -webkit-transform: translate(-50%, -50%);
+      -ms-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+
+/* line 156, /Users/craigchilds/Projects/freestate/frontends/patient/src/sass/Blocks/_blocks.stream.scss */
+.stream-controls__item--privacy img *, .stream-controls__item--privacy svg * {
+  fill: #13b5ea;
+  transition: fill 300ms ease;
+}
+
+/* line 162, /Users/craigchilds/Projects/freestate/frontends/patient/src/sass/Blocks/_blocks.stream.scss */
+.stream-controls__item--privacy .icon-privacy-off {
+  opacity: 1;
+  transition: opacity 300ms ease;
+}
+
+/* line 167, /Users/craigchilds/Projects/freestate/frontends/patient/src/sass/Blocks/_blocks.stream.scss */
+.stream-controls__item--privacy .icon-privacy-on {
+  opacity: 0;
+  transition: opacity 300ms ease;
+}
+
+/* line 172, /Users/craigchilds/Projects/freestate/frontends/patient/src/sass/Blocks/_blocks.stream.scss */
+.no-touch .stream-controls__item--privacy:hover {
+  background: #ffed51;
+}
+
+/* line 177, /Users/craigchilds/Projects/freestate/frontends/patient/src/sass/Blocks/_blocks.stream.scss */
+.stream-controls__item--privacy.privacy-on .icon-privacy-off {
+  opacity: 0;
+}
+
+/* line 181, /Users/craigchilds/Projects/freestate/frontends/patient/src/sass/Blocks/_blocks.stream.scss */
+.stream-controls__item--privacy.privacy-on .icon-privacy-on {
+  opacity: 1;
+}
+
+/* line 190, /Users/craigchilds/Projects/freestate/frontends/patient/src/sass/Blocks/_blocks.stream.scss */
+.stream__video {
+  height: 100%;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 100%;
+  z-index: 10;
+}
+
+/* line 198, /Users/craigchilds/Projects/freestate/frontends/patient/src/sass/Blocks/_blocks.stream.scss */
+.stream__video--multi {
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-wrap: wrap;
+      -ms-flex-wrap: wrap;
+          flex-wrap: wrap;
+  align-items: center;
+  -webkit-align-content: stretch;
+      -ms-flex-line-pack: stretch;
+          align-content: stretch;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  min-height: 700px;
+  padding-top: 60px;
+}
+
+/* line 10, /Users/craigchilds/Projects/freestate/frontends/patient/src/sass/Blocks/_blocks.stream.scss */
+.fullscreen-on video {
+  object-fit: contain !important;
+}
+
+/* line 15, /Users/craigchilds/Projects/freestate/frontends/patient/src/sass/Blocks/_blocks.stream.scss */
+.stream {
+  background: #59cbf0;
+  height: calc(100% - 60px);
+  overflow: scroll;
+  position: relative;
+}
+
+/* line 321, /home/prashant/freestate_staging/freestate/frontends/hcp/src/sass/Blocks/_blocks.stream.scss */
+.stream-controls__item--add-doctor {
+  background: #eaeaea;
+  transition: background 300ms ease;
+  position: relative;
+}
+
+/* line 326, /home/prashant/freestate_staging/freestate/frontends/hcp/src/sass/Blocks/_blocks.stream.scss */
+.stream-controls__item--add-doctor img, .stream-controls__item--add-doctor svg {
+  height: 50%;
+  left: 50%;
+  max-width: 60px;
+  position: absolute;
+  top: 50%;
+  -ms-transform: translate(-50%, -50%);
+      transform: translate(-50%, -50%);
+}
+
+/* line 334, /home/prashant/freestate_staging/freestate/frontends/hcp/src/sass/Blocks/_blocks.stream.scss */
+.stream-controls__item--add-doctor img *, .stream-controls__item--add-doctor svg * {
+  fill: #13b5ea;
+  transition: fill 300ms ease;
+}
+
+/* line 340, /home/prashant/freestate_staging/freestate/frontends/hcp/src/sass/Blocks/_blocks.stream.scss */
+.no-touch .stream-controls__item--add-doctor:hover {
+  background: #13b5ea;
+}
+
+/* line 343, /home/prashant/freestate_staging/freestate/frontends/hcp/src/sass/Blocks/_blocks.stream.scss */
+.no-touch .stream-controls__item--add-doctor:hover svg * {
+  fill: #fff;
+}
+
+/* line 349, /home/prashant/freestate_staging/freestate/frontends/hcp/src/sass/Blocks/_blocks.stream.scss */
+.stream-controls__item--curtain-mode {
+  background: #eaeaea;
+  transition: background 300ms ease;
+  position: relative;
+}
+
+/* line 354, /home/prashant/freestate_staging/freestate/frontends/hcp/src/sass/Blocks/_blocks.stream.scss */
+.stream-controls__item--curtain-mode img, .stream-controls__item--curtain-mode svg {
+  height: 55%;
+  left: 50%;
+  max-width: 60px;
+  position: absolute;
+  top: 50%;
+  -ms-transform: translate(-50%, -50%);
+      transform: translate(-50%, -50%);
+}
+
+/* line 362, /home/prashant/freestate_staging/freestate/frontends/hcp/src/sass/Blocks/_blocks.stream.scss */
+.stream-controls__item--curtain-mode img *, .stream-controls__item--curtain-mode svg * {
+  fill: #13b5ea;
+  transition: fill 300ms ease;
+}
+
+/* line 368, /home/prashant/freestate_staging/freestate/frontends/hcp/src/sass/Blocks/_blocks.stream.scss */
+.stream-controls__item--curtain-mode .icon-curtain-open {
+  opacity: 1;
+  transition: opacity 300ms ease;
+}
+
+/* line 373, /home/prashant/freestate_staging/freestate/frontends/hcp/src/sass/Blocks/_blocks.stream.scss */
+.stream-controls__item--curtain-mode .icon-curtain-closed {
+  opacity: 0;
+  transition: opacity 300ms ease;
+}
+
+/* line 378, /home/prashant/freestate_staging/freestate/frontends/hcp/src/sass/Blocks/_blocks.stream.scss */
+.no-touch .stream-controls__item--curtain-mode:hover {
+  background: #ffed51;
+}
+
+/* line 383, /home/prashant/freestate_staging/freestate/frontends/hcp/src/sass/Blocks/_blocks.stream.scss */
+.stream-controls__item--curtain-mode.curtain-on .icon-curtain-open {
+  opacity: 0;
+}
+
+/* line 387, /home/prashant/freestate_staging/freestate/frontends/hcp/src/sass/Blocks/_blocks.stream.scss */
+.stream-controls__item--curtain-mode.curtain-on .icon-curtain-closed {
+  opacity: 1;
+}
+
+/* line 393, /home/prashant/freestate_staging/freestate/frontends/hcp/src/sass/Blocks/_blocks.stream.scss */
+.stream-controls__item--add-notes {
+  background: #eaeaea;
+  transition: background 300ms ease;
+  position: relative;
+}
+
+/* line 398, /home/prashant/freestate_staging/freestate/frontends/hcp/src/sass/Blocks/_blocks.stream.scss */
+.stream-controls__item--add-notes img, .stream-controls__item--add-notes svg {
+  height: 60%;
+  left: 50%;
+  max-width: 60px;
+  position: absolute;
+  top: 50%;
+  -ms-transform: translate(-50%, -50%);
+      transform: translate(-50%, -50%);
+}
+
+/* line 406, /home/prashant/freestate_staging/freestate/frontends/hcp/src/sass/Blocks/_blocks.stream.scss */
+.stream-controls__item--add-notes img *, .stream-controls__item--add-notes svg * {
+  stroke: #13b5ea;
+}
+
+/* line 410, /home/prashant/freestate_staging/freestate/frontends/hcp/src/sass/Blocks/_blocks.stream.scss */
+.stream-controls__item--add-notes img path, .stream-controls__item--add-notes svg path {
+  fill: #13b5ea;
+  stroke-width: 0px;
+}
+
+/* line 415, /home/prashant/freestate_staging/freestate/frontends/hcp/src/sass/Blocks/_blocks.stream.scss */
+.stream-controls__item--add-notes img .cls-4, .stream-controls__item--add-notes svg .cls-4 {
+  fill: #eaeaea;
+  fill-opacity: 1;
+  mix-blend-mode: initial;
+  transition: fill 300ms ease;
+}
+
+/* line 423, /home/prashant/freestate_staging/freestate/frontends/hcp/src/sass/Blocks/_blocks.stream.scss */
+.no-touch .stream-controls__item--add-notes:hover {
+  background: #13b5ea;
+}
+
+/* line 428, /home/prashant/freestate_staging/freestate/frontends/hcp/src/sass/Blocks/_blocks.stream.scss */
+.no-touch .stream-controls__item--add-notes:hover svg path {
+  fill: #fff;
+}
+
+/* line 432, /home/prashant/freestate_staging/freestate/frontends/hcp/src/sass/Blocks/_blocks.stream.scss */
+.no-touch .stream-controls__item--add-notes:hover svg .cls-4 {
+  fill: #13b5ea;
+}
+
+/* line 436, /home/prashant/freestate_staging/freestate/frontends/hcp/src/sass/Blocks/_blocks.stream.scss */
+.no-touch .stream-controls__item--add-notes:hover svg * {
+  stroke: #fff;
+}
+
+/* line 445, /home/prashant/freestate_staging/freestate/frontends/hcp/src/sass/Blocks/_blocks.stream.scss */
+.stream__video {
+  height: 100%;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 100%;
+  z-index: 10;
+}
+
+/* line 453, /home/prashant/freestate_staging/freestate/frontends/hcp/src/sass/Blocks/_blocks.stream.scss */
+.stream__video--multi {
+  -ms-flex-align: center;
+      align-items: center;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  align-items: center;
+  -ms-flex-line-pack: stretch;
+      align-content: stretch;
+  -ms-flex-pack: center;
+      justify-content: center;
+  min-height: 700px;
+  padding-top: 60px;
+}
+
+/* line 321, /home/prashant/freestate_staging/freestate/frontends/hcp/src/sass/Blocks/_blocks.stream.scss */
+.stream-controls__item--add-doctor {
+  background: #eaeaea;
+  transition: background 300ms ease;
+  position: relative;
+}
+
+/* line 326, /home/prashant/freestate_staging/freestate/frontends/hcp/src/sass/Blocks/_blocks.stream.scss */
+.stream-controls__item--add-doctor img, .stream-controls__item--add-doctor svg {
+  height: 50%;
+  left: 50%;
+  max-width: 60px;
+  position: absolute;
+  top: 50%;
+  -ms-transform: translate(-50%, -50%);
+      transform: translate(-50%, -50%);
+}
+
+/* line 334, /home/prashant/freestate_staging/freestate/frontends/hcp/src/sass/Blocks/_blocks.stream.scss */
+.stream-controls__item--add-doctor img *, .stream-controls__item--add-doctor svg * {
+  fill: #13b5ea;
+  transition: fill 300ms ease;
+}
+
+/* line 340, /home/prashant/freestate_staging/freestate/frontends/hcp/src/sass/Blocks/_blocks.stream.scss */
+.no-touch .stream-controls__item--add-doctor:hover {
+  background: #13b5ea;
+}
+
+/* line 343, /home/prashant/freestate_staging/freestate/frontends/hcp/src/sass/Blocks/_blocks.stream.scss */
+.no-touch .stream-controls__item--add-doctor:hover svg * {
+  fill: #fff;
+}
+
+/* line 349, /home/prashant/freestate_staging/freestate/frontends/hcp/src/sass/Blocks/_blocks.stream.scss */
+.stream-controls__item--curtain-mode {
+  background: #eaeaea;
+  transition: background 300ms ease;
+  position: relative;
+}
+
+/* line 354, /home/prashant/freestate_staging/freestate/frontends/hcp/src/sass/Blocks/_blocks.stream.scss */
+.stream-controls__item--curtain-mode img, .stream-controls__item--curtain-mode svg {
+  height: 55%;
+  left: 50%;
+  max-width: 60px;
+  position: absolute;
+  top: 50%;
+  -ms-transform: translate(-50%, -50%);
+      transform: translate(-50%, -50%);
+}
+
+/* line 362, /home/prashant/freestate_staging/freestate/frontends/hcp/src/sass/Blocks/_blocks.stream.scss */
+.stream-controls__item--curtain-mode img *, .stream-controls__item--curtain-mode svg * {
+  fill: #13b5ea;
+  transition: fill 300ms ease;
+}
+
+/* line 368, /home/prashant/freestate_staging/freestate/frontends/hcp/src/sass/Blocks/_blocks.stream.scss */
+.stream-controls__item--curtain-mode .icon-curtain-open {
+  opacity: 1;
+  transition: opacity 300ms ease;
+}
+
+/* line 373, /home/prashant/freestate_staging/freestate/frontends/hcp/src/sass/Blocks/_blocks.stream.scss */
+.stream-controls__item--curtain-mode .icon-curtain-closed {
+  opacity: 0;
+  transition: opacity 300ms ease;
+}
+
+/* line 378, /home/prashant/freestate_staging/freestate/frontends/hcp/src/sass/Blocks/_blocks.stream.scss */
+.no-touch .stream-controls__item--curtain-mode:hover {
+  background: #ffed51;
+}
+
+/* line 383, /home/prashant/freestate_staging/freestate/frontends/hcp/src/sass/Blocks/_blocks.stream.scss */
+.stream-controls__item--curtain-mode.curtain-on .icon-curtain-open {
+  opacity: 0;
+}
+
+/* line 387, /home/prashant/freestate_staging/freestate/frontends/hcp/src/sass/Blocks/_blocks.stream.scss */
+.stream-controls__item--curtain-mode.curtain-on .icon-curtain-closed {
+  opacity: 1;
+}
+
+/* line 393, /home/prashant/freestate_staging/freestate/frontends/hcp/src/sass/Blocks/_blocks.stream.scss */
+.stream-controls__item--add-notes {
+  background: #eaeaea;
+  transition: background 300ms ease;
+  position: relative;
+}
+
+/* line 398, /home/prashant/freestate_staging/freestate/frontends/hcp/src/sass/Blocks/_blocks.stream.scss */
+.stream-controls__item--add-notes img, .stream-controls__item--add-notes svg {
+  height: 60%;
+  left: 50%;
+  max-width: 60px;
+  position: absolute;
+  top: 50%;
+  -ms-transform: translate(-50%, -50%);
+      transform: translate(-50%, -50%);
+}
+
+/* line 406, /home/prashant/freestate_staging/freestate/frontends/hcp/src/sass/Blocks/_blocks.stream.scss */
+.stream-controls__item--add-notes img *, .stream-controls__item--add-notes svg * {
+  stroke: #13b5ea;
+}
+
+/* line 410, /home/prashant/freestate_staging/freestate/frontends/hcp/src/sass/Blocks/_blocks.stream.scss */
+.stream-controls__item--add-notes img path, .stream-controls__item--add-notes svg path {
+  fill: #13b5ea;
+  stroke-width: 0px;
+}
+
+/* line 415, /home/prashant/freestate_staging/freestate/frontends/hcp/src/sass/Blocks/_blocks.stream.scss */
+.stream-controls__item--add-notes img .cls-4, .stream-controls__item--add-notes svg .cls-4 {
+  fill: #eaeaea;
+  fill-opacity: 1;
+  mix-blend-mode: initial;
+  transition: fill 300ms ease;
+}
+
+/* line 423, /home/prashant/freestate_staging/freestate/frontends/hcp/src/sass/Blocks/_blocks.stream.scss */
+.no-touch .stream-controls__item--add-notes:hover {
+  background: #13b5ea;
+}
+
+/* line 428, /home/prashant/freestate_staging/freestate/frontends/hcp/src/sass/Blocks/_blocks.stream.scss */
+.no-touch .stream-controls__item--add-notes:hover svg path {
+  fill: #fff;
+}
+
+/* line 432, /home/prashant/freestate_staging/freestate/frontends/hcp/src/sass/Blocks/_blocks.stream.scss */
+.no-touch .stream-controls__item--add-notes:hover svg .cls-4 {
+  fill: #13b5ea;
+}
+
+/* line 436, /home/prashant/freestate_staging/freestate/frontends/hcp/src/sass/Blocks/_blocks.stream.scss */
+.no-touch .stream-controls__item--add-notes:hover svg * {
+  stroke: #fff;
+}
+
+/* line 445, /home/prashant/freestate_staging/freestate/frontends/hcp/src/sass/Blocks/_blocks.stream.scss */
+.stream__video {
+  height: 100%;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 100%;
+  z-index: 10;
+}
+
+/* line 453, /home/prashant/freestate_staging/freestate/frontends/hcp/src/sass/Blocks/_blocks.stream.scss */
+.stream__video--multi {
+  -ms-flex-align: center;
+      align-items: center;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  align-items: center;
+  -ms-flex-line-pack: stretch;
+      align-content: stretch;
+  -ms-flex-pack: center;
+      justify-content: center;
+  min-height: 700px;
+  padding-top: 60px;
+}
+
+@media screen and (max-height: 800px) {
+  /* line 453, /home/prashant/freestate_staging/freestate/frontends/hcp/src/sass/Blocks/_blocks.stream.scss */
+  .stream__video--multi {
+    padding: 60px 30px;
+  }
+}
+
+/* line 468, /home/prashant/freestate_staging/freestate/frontends/hcp/src/sass/Blocks/_blocks.stream.scss */
+.stream__video__item {
+  background: rgba(0, 0, 0, 0.4);
+  height: 100%;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 100%;
+  z-index: 10;
+}
+
+/* line 478, /home/prashant/freestate_staging/freestate/frontends/hcp/src/sass/Blocks/_blocks.stream.scss */
+.stream__video__item--fullscreen-enabled:hover {
+  cursor: nesw-resize;
+}
+
+/* line 483, /home/prashant/freestate_staging/freestate/frontends/hcp/src/sass/Blocks/_blocks.stream.scss */
+.stream__video--multi .stream__video__item {
+  margin: 35px 10px;
+  -ms-flex-positive: 1;
+      flex-grow: 1;
+  height: auto;
+  left: auto;
+  position: relative;
+  top: auto;
+  max-height: 300px;
+  max-width: 400px;
+  height: 100%;
+  width: 100%;
+}
+
+/* line 496, /home/prashant/freestate_staging/freestate/frontends/hcp/src/sass/Blocks/_blocks.stream.scss */
+.stream__video__item .video-item-caller-name {
+  color: #fff;
+  display: none;
+  font: 18px/18px "Montserrat", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
+  position: absolute;
+  top: -35px;
+}
+
+/* line 503, /home/prashant/freestate_staging/freestate/frontends/hcp/src/sass/Blocks/_blocks.stream.scss */
+.stream__video--multi .stream__video__item .video-item-caller-name {
+  display: block;
+}
+
+/* line 508, /home/prashant/freestate_staging/freestate/frontends/hcp/src/sass/Blocks/_blocks.stream.scss */
+.stream__video__item video {
+  height: 100%;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 100%;
+}
+
+/* line 468, /home/prashant/freestate_staging/freestate/frontends/hcp/src/sass/Blocks/_blocks.stream.scss */
+.stream__video__item {
+  background: rgba(0, 0, 0, 0.4);
+  height: 100%;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 100%;
+  z-index: 10;
+}
+
+/* line 478, /home/prashant/freestate_staging/freestate/frontends/hcp/src/sass/Blocks/_blocks.stream.scss */
+.stream__video__item--fullscreen-enabled:hover {
+  cursor: nesw-resize;
+}
+
+/* line 483, /home/prashant/freestate_staging/freestate/frontends/hcp/src/sass/Blocks/_blocks.stream.scss */
+.stream__video--multi .stream__video__item {
+  margin: 35px 10px;
+  -ms-flex-positive: 1;
+      flex-grow: 1;
+  height: auto;
+  left: auto;
+  position: relative;
+  top: auto;
+  max-height: 300px;
+  max-width: 400px;
+  height: 100%;
+  width: 100%;
+}
+
+/* line 518, /home/prashant/freestate_staging/freestate/frontends/hcp/src/sass/Blocks/_blocks.stream.scss */
+.stream__self {
+  background: #000;
+  bottom: 30px;
+  display: none;
+  height: 130px;
+  position: fixed;
+  right: 30px;
+  width: 230px;
+  z-index: 20;
+}
+
+/* line 528, /home/prashant/freestate_staging/freestate/frontends/hcp/src/sass/Blocks/_blocks.stream.scss */
+.stream__self--screen {
+  right: 270px;
+}
+
+/* line 532, /home/prashant/freestate_staging/freestate/frontends/hcp/src/sass/Blocks/_blocks.stream.scss */
+.stream__self--show {
+  display: block;
+}
+
+/* line 536, /home/prashant/freestate_staging/freestate/frontends/hcp/src/sass/Blocks/_blocks.stream.scss */
+.stream__self video {
+  height: 100%;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 100%;
+}
+
+/* line 545, /home/prashant/freestate_staging/freestate/frontends/hcp/src/sass/Blocks/_blocks.stream.scss */
+.stream__recording-indicator {
+  position: absolute;
+  z-index: 30;
+  right: 60px;
+  top: 60px;
+  background: #333;
+  border-radius: 4px;
+  padding: 14px;
+}
+
+/* line 557, /home/prashant/freestate_staging/freestate/frontends/hcp/src/sass/Blocks/_blocks.stream.scss */
+.stream__recording-indicator__icon {
+  border-radius: 50%;
+  content: "";
+  display: inline-block;
+  float: left;
+  height: 10px;
+  margin-right: 10px;
+  margin-top: 5px;
+  width: 10px;
+}
+
+/* line 567, /home/prashant/freestate_staging/freestate/frontends/hcp/src/sass/Blocks/_blocks.stream.scss */
+.stream__recording-indicator__icon[data-state="recording"] {
+  background: #fa023c;
+}
+
+/* line 571, /home/prashant/freestate_staging/freestate/frontends/hcp/src/sass/Blocks/_blocks.stream.scss */
+.stream__recording-indicator__icon[data-state="paused"] {
+  background: #88c425;
+}
+
+/* line 575, /home/prashant/freestate_staging/freestate/frontends/hcp/src/sass/Blocks/_blocks.stream.scss */
+.stream__recording-indicator__icon[data-state="stopped"] {
+  background: #8b8b8b;
+}
+
+/* line 580, /home/prashant/freestate_staging/freestate/frontends/hcp/src/sass/Blocks/_blocks.stream.scss */
+.stream__recording-indicator__text {
+  float: left;
+  color: #fff;
+  font: 500 18px/18px "Montserrat", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
+}
+
+/* line 586, /home/prashant/freestate_staging/freestate/frontends/hcp/src/sass/Blocks/_blocks.stream.scss */
+.stream__recording-indicator__time {
+  display: inline-block;
+  float: right;
+  margin-bottom: 0;
+  margin-left: 10px;
+  margin-top: 0;
+  color: #8b8b8b;
+}
+
+/* line 597, /home/prashant/freestate_staging/freestate/frontends/hcp/src/sass/Blocks/_blocks.stream.scss */
+.invite-to-call {
+  background: rgba(0, 0, 0, 0.5);
+  height: 100%;
+  left: 100%;
+  opacity: 0;
+  padding: 30px;
+  position: absolute;
+  text-align: center;
+  top: 0;
+  transition: opacity 200ms ease-in;
+  transition-delay: 0.1s;
+  width: 100%;
+  z-index: 20;
+}
+
+/* line 611, /home/prashant/freestate_staging/freestate/frontends/hcp/src/sass/Blocks/_blocks.stream.scss */
+.invite-to-call .form__label, .invite-to-call .av-settings .opentok-hardware-setup-label, .av-settings .invite-to-call .opentok-hardware-setup-label, .invite-to-call .notes__label {
+  color: #fff;
+}
+
+/* line 615, /home/prashant/freestate_staging/freestate/frontends/hcp/src/sass/Blocks/_blocks.stream.scss */
+.invite-to-call--display {
+  left: 0;
+  opacity: 1;
+}
+
+/* line 620, /home/prashant/freestate_staging/freestate/frontends/hcp/src/sass/Blocks/_blocks.stream.scss */
+.invite-to-call__body {
+  display: inline-block;
+  margin-top: 80px;
+  text-align: left;
+}
+
+/* line 626, /home/prashant/freestate_staging/freestate/frontends/hcp/src/sass/Blocks/_blocks.stream.scss */
+.invite-to-call__title {
+  color: #fff;
+  font: 18px/18px "Montserrat", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
+}
+
+/* line 631, /home/prashant/freestate_staging/freestate/frontends/hcp/src/sass/Blocks/_blocks.stream.scss */
+.invite-to-call__filters {
+  margin: 30px 0 40px;
+}
+
+/* line 634, /home/prashant/freestate_staging/freestate/frontends/hcp/src/sass/Blocks/_blocks.stream.scss */
+.invite-to-call__filters__filter {
+  color: rgba(19, 181, 234, 0.4);
+  font: 16px/20px "Montserrat", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
+  text-decoration: none;
+}
+
+/* line 639, /home/prashant/freestate_staging/freestate/frontends/hcp/src/sass/Blocks/_blocks.stream.scss */
+.invite-to-call__filters__filter:last-child {
+  margin-right: 0;
+}
+
+/* line 643, /home/prashant/freestate_staging/freestate/frontends/hcp/src/sass/Blocks/_blocks.stream.scss */
+.invite-to-call__filters__filter--current {
+  color: #13b5ea;
+  display: inline-block;
+  margin-right: 10px;
+}
+
+/* line 648, /home/prashant/freestate_staging/freestate/frontends/hcp/src/sass/Blocks/_blocks.stream.scss */
+.invite-to-call__filters__filter--current:after {
+  background: #13b5ea;
+  content: "";
+  display: block;
+  height: 2px;
+  position: relative;
+  top: 5px;
+  width: 100%;
+}
+
+/* line 661, /home/prashant/freestate_staging/freestate/frontends/hcp/src/sass/Blocks/_blocks.stream.scss */
+.invite-to-call__available {
+ /* margin-top: 50px;*/
+  max-height: 160px;
+  overflow-y: scroll;
+  padding: 20px;
+  background: #fff;
+}
+
+/* line 668, /home/prashant/freestate_staging/freestate/frontends/hcp/src/sass/Blocks/_blocks.stream.scss */
+.invite-to-call__available__item {
+  color: #13b5ea;
+  display: block;
+  font: 16px/20px "Montserrat", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
+  margin-bottom: 6px;
+  text-decoration: none;
+}
+/* line 1, /home/prashant/freestate_staging/freestate/frontends/hcp/src/sass/Blocks/_blocks.video-tagger.scss */
+.video-tagger {
+  position: absolute;
+  bottom: 0px;
+}
+
+/* line 6, /home/prashant/freestate_staging/freestate/frontends/hcp/src/sass/Blocks/_blocks.video-tagger.scss */
+.video-tagger-container {
+  position: absolute;
+  left: 60px;
+  bottom: 30px;
+  z-index: 11;
+  width: 50%;
+  height: 100%;
+}
+
+/* line 15, /home/prashant/freestate_staging/freestate/frontends/hcp/src/sass/Blocks/_blocks.video-tagger.scss */
+.video-tagger__button {
+  float: left;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  z-index: 12;
+}
+
+/* line 23, /home/prashant/freestate_staging/freestate/frontends/hcp/src/sass/Blocks/_blocks.video-tagger.scss */
+.video-tagger__heading {
+  font: 700 12px/12px "Montserrat", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
+  color: #57b4df;
+}
+
+/* line 27, /home/prashant/freestate_staging/freestate/frontends/hcp/src/sass/Blocks/_blocks.video-tagger.scss */
+.video-tagger__heading--error {
+  color: red;
+}
+
+/* line 31, /home/prashant/freestate_staging/freestate/frontends/hcp/src/sass/Blocks/_blocks.video-tagger.scss */
+.video-tagger__heading--success {
+  color: green;
+}
+
+/* line 36, /home/prashant/freestate_staging/freestate/frontends/hcp/src/sass/Blocks/_blocks.video-tagger.scss */
+.video-tagger__banner .video-tagger__heading {
+  margin-bottom: 0;
+  font-size: 16px;
+}
+
+/* line 41, /home/prashant/freestate_staging/freestate/frontends/hcp/src/sass/Blocks/_blocks.video-tagger.scss */
+.video-tagger__add-tag, .video-tagger__add-note, .video-tagger__banner {
+  background: #eee;
+  border-radius: 4px;
+  float: left;
+  margin-left: 100px;
+  padding: 20px 30px;
+  width: auto;
+}
+
+/* line 59, /home/prashant/freestate_staging/freestate/frontends/hcp/src/sass/Blocks/_blocks.video-tagger.scss */
+.video-tagger__add-note__field {
+  margin-bottom: 20px;
+}
+
+/* line 2, /home/prashant/freestate_staging/freestate/frontends/hcp/src/sass/Blocks/_blocks.video-sessions.scss */
+.video-sessions__thumbnail {
+  height: 100%;
+  max-height: 300px;
+  width: auto;
+}
+
+/* line 7, /home/prashant/freestate_staging/freestate/frontends/hcp/src/sass/Blocks/_blocks.video-sessions.scss */
+.video-sessions__thumbnail--processing {
+  background: #eee;
+  line-height: 10;
+  text-align: center;
+  font-weight: 700;
+  width: 213.33px;
+}
+
+/* line 17, /home/prashant/freestate_staging/freestate/frontends/hcp/src/sass/Blocks/_blocks.video-sessions.scss */
+.video-sessions__table tr td {
+  height: 200px !important;
+}
+
+/* line 22, /home/prashant/freestate_staging/freestate/frontends/hcp/src/sass/Blocks/_blocks.video-sessions.scss */
+.video-sessions__icon {
+  width: 40px;
+  text-align: center;
+  display: inline-block;
+  height: auto;
+  margin: 20px;
+}
+
+/* line 29, /home/prashant/freestate_staging/freestate/frontends/hcp/src/sass/Blocks/_blocks.video-sessions.scss */
+.video-sessions__icon svg path {
+  fill: #8b8b8b;
+}
+
+/* line 38, /home/prashant/freestate_staging/freestate/frontends/hcp/src/sass/Blocks/_blocks.video-sessions.scss */
+.video-session__video {
+  display: inline-block;
+  content: "";
+  height: auto;
+  min-height: 400px;
+}
+
+/* line 45, /home/prashant/freestate_staging/freestate/frontends/hcp/src/sass/Blocks/_blocks.video-sessions.scss */
+.video-session__video, .video-session__tags {
+  width: 100%;
+}
+
+/* line 49, /home/prashant/freestate_staging/freestate/frontends/hcp/src/sass/Blocks/_blocks.video-sessions.scss */
+.video-session__tags {
+  height: 100%;
+  margin-top: 40px;
+}
+
+/* line 55, /home/prashant/freestate_staging/freestate/frontends/hcp/src/sass/Blocks/_blocks.video-sessions.scss */
+.video-session__tags table {
+  margin-top: 0px;
+}
+
+@media screen and (min-width: 725px) {
+  /* line 60, /home/prashant/freestate_staging/freestate/frontends/hcp/src/sass/Blocks/_blocks.video-sessions.scss */
+  .video-session__video, .video-session__tags {
+    width: 50%;
+    float: left;
+  }
+  /* line 65, /home/prashant/freestate_staging/freestate/frontends/hcp/src/sass/Blocks/_blocks.video-sessions.scss */
+  .video-session__video {
+    padding-right: 10px;
+  }
+  /* line 69, /home/prashant/freestate_staging/freestate/frontends/hcp/src/sass/Blocks/_blocks.video-sessions.scss */
+  .video-session__tags {
+    padding-left: 10px;
+    margin-top: 0px;
+  }
+}
+
+/* line 227, /home/prashant/freestate_staging/freestate/frontends/hcp/src/sass/Blocks/_blocks.overlay.scss */
+.patient-overlay, .av-settings__overlay {
+  width: 50%;
+  position: absolute;
+  top: 0;
+  height: auto;
+  z-index: 1000;
+  background: #f9f9f9;
+  border-right: 1px solid #d7d7d7;
+  left: -100%;
+  transition: .5s left ease-in-out;
+}
+
+/* line 238, /home/prashant/freestate_staging/freestate/frontends/hcp/src/sass/Blocks/_blocks.overlay.scss */
+.patient-overlay--video {
+  width: 60%;
+}
+
+/* line 242, /home/prashant/freestate_staging/freestate/frontends/hcp/src/sass/Blocks/_blocks.overlay.scss */
+.patient-overlay.active, .active.av-settings__overlay {
+  left: 0;
+}
+
+/* line 246, /home/prashant/freestate_staging/freestate/frontends/hcp/src/sass/Blocks/_blocks.overlay.scss */
+.patient-overlay .patient, .av-settings__overlay .patient {
+  width: 100%;
+}
+
+/* line 250, /home/prashant/freestate_staging/freestate/frontends/hcp/src/sass/Blocks/_blocks.overlay.scss */
+.patient-overlay__close {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+}
+
+/* line 254, /home/prashant/freestate_staging/freestate/frontends/hcp/src/sass/Blocks/_blocks.overlay.scss */
+.patient-overlay__close a {
+  font-family: "Montserrat", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
+  font-size: 1.5em;
+}
+.video-call-media-button{
+      position: fixed;
+    z-index: 1000;
+    bottom: 178px;
+    right: 0px;
+}
+.audio-video-img{
+  width: 40px;
+  height: 40px;
+}
+/******* My Patient tabs code end **********/
+
+.message-status
+{
+  width: 19px;
+  margin-left: 2%;
+  margin-right: 2%;
+}
+
+.OT_publisher, .OT_subscriber {
+  position: absolute !important;
+  top: 0 !important;
+  left: 0 !important;
+  width: 100% !important;
+  height: 100% !important;
+}
+
+/* line 1, /Users/craigchilds/Projects/freestate/frontends/patient/src/sass/Blocks/_blocks.content.scss */
+.content {
+  padding: 50px 35px;
+}
+/* line 293, /home/prashant/freestate_staging/freestate/frontends/hcp/src/sass/Blocks/_blocks.stream.scss */
+.stream-controls__item--details {
+  background: #eaeaea;
+  transition: background 300ms ease;
+  position: relative;
+}
+
+/* line 298, /home/prashant/freestate_staging/freestate/frontends/hcp/src/sass/Blocks/_blocks.stream.scss */
+.stream-controls__item--details img, .stream-controls__item--details svg {
+  height: 60%;
+  left: 50%;
+  max-width: 70px;
+  position: absolute;
+  top: 50%;
+  -ms-transform: translate(-50%, -50%);
+      transform: translate(-50%, -50%);
+}
+
+/* line 306, /home/prashant/freestate_staging/freestate/frontends/hcp/src/sass/Blocks/_blocks.stream.scss */
+.stream-controls__item--details img *, .stream-controls__item--details svg * {
+  fill: #13b5ea;
+  transition: fill 300ms ease;
+}
+
+/* line 312, /home/prashant/freestate_staging/freestate/frontends/hcp/src/sass/Blocks/_blocks.stream.scss */
+.no-touch .stream-controls__item--details:hover {
+  background: #13b5ea;
+}
+
+/* line 315, /home/prashant/freestate_staging/freestate/frontends/hcp/src/sass/Blocks/_blocks.stream.scss */
+.no-touch .stream-controls__item--details:hover svg * {
+  fill: #fff;
+}
+
+/*form login*/
+.form--login {
+    width: 380px;
+    height: auto;
+    margin: auto;
+}
+
+.form--with-logo .logo {
+    display: flex;
+    margin: 25px 0;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    padding-left: 0px;
+}
+
+.form--floating-center {
+  width: 490px;
+  height: auto;
+  margin: auto;
+}
+
+.form__wrapper {
+    background: #fff;
+    border-radius: 10px;
+    padding: 20px;
+    position: relative;
+    box-shadow: 10px 10px 27px 0px rgb(0 0 0 / 10%);
+}
+
+.form .form-wrapper-heading {
+    color: #515151;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 14px;
+    margin-bottom: 25px;
+    font-weight: normal;
+}
+
+.form-control{
+    height: 43px !important;
+}
+
+.terms-condition
+{
+    height: 450px;
+    overflow: auto;
+    width: 600px;
+}
